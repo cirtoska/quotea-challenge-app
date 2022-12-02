@@ -1,0 +1,39 @@
+#list {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1rem;
+}
+
+thead {
+  background-color: #dddddd;
+  font-size: 1.4rem;
+}
+.separator {
+  border-right: #f0fdf4 1px solid;
+}
+
+td {
+  background-color: #f8fffa;
+  padding: 1rem;
+}
+
+.quote-id, .gender {
+  text-align: center;
+}
+
+td.quote::before, td.quote::after {
+content: '"';
+}

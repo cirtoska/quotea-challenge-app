@@ -1,0 +1,18 @@
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.signature {
+  font-family: 'Allura', cursive;
+  font-size: 1.4rem;
+}
+
+.icon {
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,73 @@
+.quote-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.return {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.return a {
+text-decoration: none;
+display: flex;
+gap: 7px;
+justify-content: center;
+color: #7F00C9;
+transition: all 0.5s ease;
+}
+.return a:hover {
+  opacity: 0.7;
+}
+.return a:active {
+  transform: scale(.95);
+}
+
+.text-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.text-quote::before, .text-quote::after {
+  content: '"';
+}
+
+.quote-author {
+  padding: 2rem;
+  color: #7F00C9;
+  font-size: 1.5rem;
+}
+.quote-author::before, .quote-author::after {
+  content: '~';
+  padding: 0 10px;
+}
+
+.btn {
+  font-family: 'Comfortaa', cursive;
+  text-transform: lowercase;
+  border: none;
+  background-color: #AFC900;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  box-shadow: -1px 1px 10px 1px rgba(0,0,0,0.36);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* @media (max-width: 900px) {
+  .quote-card {
+    max-width: 100%;
+    top: 50%;
+    left: 100%;
+    transform: translate(-150%, 10%);
+  }
+} */

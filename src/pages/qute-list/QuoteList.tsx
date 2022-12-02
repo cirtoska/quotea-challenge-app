@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/header/Header";
+import TableOfQuotes from "../../components/table/TableOfQuotes";
 
 const QuoteList = () => {
   return (
-    <div>QuoteList</div>
-  )
-}
+    <>
+      <Header />
+      <TableOfQuotes />
+    </>
+  );
+};
 
-export default QuoteList
+export default QuoteList;

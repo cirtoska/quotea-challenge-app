@@ -1,0 +1,30 @@
+
+#home {
+  height: 90vh;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 3rem;
+  padding: 2rem;
+  border: 3px solid #AFC900;
+  border-radius: 20px;
+}
+
+.txt-logo {
+  font-family: 'Allura', cursive;
+  text-transform: lowercase;
+  background-color: #7F00C9;
+  color: white;
+  padding: 5px 15px;
+  font-size: 4rem;
+  border-radius: 20px;
+}

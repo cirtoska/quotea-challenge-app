@@ -1,4 +1,5 @@
 .header {
+  font-family: 'Comfortaa', cursive;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,7 +9,7 @@
   gap: 1rem;
 }
 img.logo  {
-  width: 10%;
+  width: 50%;
   padding: 0;
   margin: 0;
 }
@@ -16,4 +17,21 @@ img.logo  {
 .header > a {
   font-size: 2rem;
   text-decoration: none;
+}
+
+.nav-btn {
+  background-color: #afc900;
+  outline: 4px solid #3f6212;
+  border: 10px solid white;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 8px;
+  transition: all 0.5s ease;
+}
+
+.nav-btn:hover {
+  opacity: 0.8;
+}
+.nav-btn:active {
+  transform: scale(0.9);
 }
