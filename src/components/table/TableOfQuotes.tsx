@@ -1,15 +1,10 @@
 import { useEffect, useState } from "react";
-
+import Gender from "../gender/Gender";
+import { Quote } from "../../utility/model";
 import "./style.css";
 
-type quoteProps = {
-  id: number;
-  quote: string;
-  author: string;
-};
-
 const TableOfQuotes = () => {
-  const [quote, setQuote] = useState<quoteProps[]>([]);
+  const [quote, setQuote] = useState<Quote[]>([]);
 
   useEffect(() => {
     const api = async () => {
@@ -18,13 +13,6 @@ const TableOfQuotes = () => {
       });
       const jsonData = await data.json();
       setQuote(jsonData.quotes);
-      // {
-      //   quote.map((item) => {
-      //     const firstName = `${item.author}`.split(" ")[0];
-
-      //     return console.log(firstName);
-      //   });
-      // }
     };
     api();
   }, []);
@@ -47,7 +35,9 @@ const TableOfQuotes = () => {
                 <td className="quote-id">{item.id}</td>
                 <td className="quote">{item.quote}</td>
                 <td>{item.author}</td>
-                <td>Gender no.1</td>
+                <td>
+                  <Gender author={item.author} id={0} quote={""} gender={""} />
+                </td>
               </tr>
             );
           })}
